@@ -5,7 +5,7 @@ project('password-random-generator', 'c',
 gtkDep = dependency('gtk4')
 sqliteDep = dependency('sqlite3')
 
-exe = executable('password_random_generator', 'password_random_generator.c',
+exe = executable('password_random_generator', 'src/password_random_generator.c',
   install : true,
   dependencies : [gtkDep, sqliteDep])
 
